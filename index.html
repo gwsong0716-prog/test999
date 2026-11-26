@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>김민준 · 이서연 결혼합니다</title>
+  <meta name="description" content="2027년 5월 15일 토요일 오후 2시, 인터불고호텔 대구 1층 그랜드홀">
+  <meta name="theme-color" content="#607938">
+
+  <!-- 카카오톡·메신저 링크 미리보기 (OG 태그)
+       og:image / og:url 은 배포 후 실제 주소로 바꿔야 미리보기가 보입니다.
+       예: https://계정명.github.io/저장소명/image/web/03.jpg  -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="김민준 · 이서연 결혼합니다">
+  <meta property="og:description" content="2027년 5월 15일 토요일 오후 2시 · 인터불고호텔 대구 1층 그랜드홀">
+  <meta property="og:image" content="image/web/03.jpg">
+  <meta property="og:url" content="">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+KR:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 상단 바 + 전체 화면 메뉴 -->
+<div class="topbar" id="topbar">
+  <a class="topbar__logo en" href="#top" aria-label="맨 위로">M &amp; S</a>
+  <button class="topbar__menu" id="menuBtn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="menu">
+    <span></span><span></span>
+  </button>
+</div>
+<nav class="menu" id="menu" aria-label="섹션 이동" hidden>
+  <ul>
+    <li><a href="#greeting"><i class="en">01</i>Invitation</a></li>
+    <li><a href="#couple"><i class="en">02</i>Groom &amp; Bride</a></li>
+    <li><a href="#gallery"><i class="en">03</i>Gallery</a></li>
+    <li><a href="#info"><i class="en">04</i>Wedding Day</a></li>
+    <li><a href="#location"><i class="en">05</i>Location</a></li>
+    <li><a href="#account"><i class="en">06</i>With Heart</a></li>
+    <li><a href="#share"><i class="en">07</i>Thank You</a></li>
+  </ul>
+</nav>
+
+<!-- 우하단 원형 공유 버튼 -->
+<button class="fab" id="fab" type="button" aria-label="청첩장 공유하기">
+  <svg viewBox="0 0 100 100" aria-hidden="true">
+    <defs><path id="fabPath" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs>
+    <text><textPath href="#fabPath" startOffset="0">SHARE · SHARE · SHARE · SHARE ·</textPath></text>
+  </svg>
+  <span class="fab__heart" aria-hidden="true">&#9825;</span>
+</button>
+
+<main class="wrap">
+
+  <!-- 1. 표지 -->
+  <header class="hero grain" id="top">
+    <img class="hero__img" src="image/web/03.jpg" alt="신랑 김민준과 신부 이서연" fetchpriority="high">
+    <div class="hero__shade"></div>
+    <div class="hero__text">
+      <p class="hero__eyebrow en">Wedding Invitation</p>
+      <h1 class="hero__names">김민준 <span class="hero__dot">·</span> 이서연</h1>
+      <p class="hero__date">2027년 5월 15일 토요일 오후 2시</p>
+      <p class="hero__place">인터불고호텔 대구 1층 그랜드홀</p>
+    </div>
+    <a class="hero__scroll" href="#greeting" aria-label="아래로 스크롤">
+      <span></span>
+    </a>
+  </header>
+
+  <!-- 2. 인사말 -->
+  <section class="section section--a reveal" id="greeting">
+    <span class="num en">01</span>
+    <h2 class="title en">Invitation</h2>
+    <p class="subtitle">초대합니다</p>
+    <span class="rule"></span>
+    <figure class="photo photo--wide">
+      <img src="image/web/04.jpg" alt="환하게 웃고 있는 신랑 신부" loading="lazy">
+    </figure>
+    <p class="greeting-text">
+      서로 다른 길을 걸어온 두 사람이<br>
+      이제 같은 길을 함께 걸어가려 합니다.<br><br>
+      따뜻한 봄날, 저희의 첫걸음을<br>
+      축복해 주시면 더없는 기쁨으로<br>
+      간직하겠습니다.
+    </p>
+  </section>
+
+  <!-- 3. 신랑·신부 -->
+  <section class="section section--b reveal" id="couple">
+    <span class="num en">02</span>
+    <h2 class="title en">Groom &amp; Bride</h2>
+    <p class="subtitle">신랑 · 신부</p>
+    <span class="rule"></span>
+    <div class="couple">
+      <figure class="couple__item">
+        <img src="image/web/01.jpg" alt="신랑 김민준" loading="lazy">
+        <figcaption><span class="couple__role en">Groom</span><strong>신랑 김민준</strong></figcaption>
+      </figure>
+      <figure class="couple__item">
+        <img src="image/web/02.jpg" alt="신부 이서연" loading="lazy">
+        <figcaption><span class="couple__role en">Bride</span><strong>신부 이서연</strong></figcaption>
+      </figure>
+    </div>
+    <div class="contact" id="contact" hidden></div>
+  </section>
+
+  <!-- 4. 갤러리 -->
+  <section class="section section--a reveal" id="gallery">
+    <span class="num en">03</span>
+    <h2 class="title en">Gallery</h2>
+    <p class="subtitle">갤러리</p>
+    <span class="rule"></span>
+    <div class="gallery" id="galleryGrid">
+      <button class="gallery__item" data-index="0" aria-label="사진 1 크게 보기"><img src="image/web/01.jpg" alt="신랑 김민준" loading="lazy"></button>
+      <button class="gallery__item" data-index="1" aria-label="사진 2 크게 보기"><img src="image/web/02.jpg" alt="신부 이서연" loading="lazy"></button>
+      <button class="gallery__item" data-index="2" aria-label="사진 3 크게 보기"><img src="image/web/03.jpg" alt="손을 잡고 서 있는 신랑 신부" loading="lazy"></button>
+      <button class="gallery__item" data-index="3" aria-label="사진 4 크게 보기"><img src="image/web/04.jpg" alt="신랑 신부 얼굴 가까이" loading="lazy"></button>
+      <button class="gallery__item" data-index="4" aria-label="사진 5 크게 보기"><img src="image/web/05.jpg" alt="베이지색 벽 앞의 신랑 신부" loading="lazy"></button>
+      <button class="gallery__item" data-index="5" aria-label="사진 6 크게 보기"><img src="image/web/06.jpg" alt="서로를 바라보며 걷는 신랑 신부" loading="lazy"></button>
+      <button class="gallery__item gallery__item--wide" data-index="6" aria-label="사진 7 크게 보기"><img src="image/web/07.jpg" alt="맞잡은 두 손과 결혼반지" loading="lazy"></button>
+    </div>
+  </section>
+
+  <!-- 5. 예식 정보 · D-day -->
+  <section class="section info grain reveal" id="info">
+    <div class="info__bg" style="background-image:url('image/web/05.jpg')"></div>
+    <div class="info__body">
+      <span class="num en">04</span>
+      <h2 class="title en">Wedding Day</h2>
+      <p class="subtitle">예식 안내</p>
+      <span class="rule"></span>
+
+      <p class="info__date">2027. 05. 15 <span>SAT</span></p>
+      <p class="info__time">오후 2시</p>
+      <p class="info__venue">인터불고호텔 대구 1층 그랜드홀</p>
+      <p class="info__addr">대구광역시 수성구 만촌동 300</p>
+
+      <div class="calendar" id="calendar" aria-label="2027년 5월 달력"></div>
+
+      <div class="dday" aria-live="polite">
+        <p class="dday__label en">D-day</p>
+        <p class="dday__num en" id="ddayNum">D-000</p>
+        <div class="dday__clock" id="ddayClock">
+          <div><b id="cdD">0</b><span>일</span></div>
+          <div><b id="cdH">0</b><span>시간</span></div>
+          <div><b id="cdM">0</b><span>분</span></div>
+          <div><b id="cdS">0</b><span>초</span></div>
+        </div>
+        <p class="dday__msg" id="ddayMsg"></p>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn" id="btnGcal" href="#" target="_blank" rel="noopener">구글 캘린더에 저장</a>
+        <button class="btn" id="btnIcs" type="button">.ics 파일 받기</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 오시는 길 -->
+  <section class="section section--b reveal" id="location">
+    <span class="num en">05</span>
+    <h2 class="title en">Location</h2>
+    <p class="subtitle">오시는 길</p>
+    <span class="rule"></span>
+    <p class="loc__venue">인터불고호텔 대구 1층 그랜드홀</p>
+    <p class="loc__addr">대구광역시 수성구 만촌동 300</p>
+    <div class="map">
+      <iframe title="인터불고호텔 대구 지도"
+        src="https://maps.google.com/maps?q=%EC%9D%B8%ED%84%B0%EB%B6%88%EA%B3%A0%ED%98%B8%ED%85%94%20%EB%8C%80%EA%B5%AC&hl=ko&z=16&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="btn-row btn-row--3">
+      <a class="btn" href="https://map.naver.com/p/search/인터불고호텔 대구" target="_blank" rel="noopener">네이버 지도</a>
+      <a class="btn" href="https://map.kakao.com/link/search/인터불고호텔 대구" target="_blank" rel="noopener">카카오맵</a>
+      <a class="btn" href="tmap://search?name=인터불고호텔 대구">티맵</a>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn--fill" type="button" data-copy="대구광역시 수성구 만촌동 300" data-msg="주소가 복사되었습니다">주소 복사</button>
+    </div>
+
+    <dl class="transport">
+      <div><dt>지하철</dt><dd>
+        1호선 아양교역 하차 → 택시 약 10분 (약 5,000원) / 814번 버스 환승 약 20분<br>
+        2호선 만촌역 하차 → 택시 약 10분 (약 6,500원) / 848번 버스 환승 약 15분
+      </dd></div>
+      <div><dt>버스</dt><dd>
+        651 · 848 · 수성2번: 호텔 정문 하차<br>
+        518 · 708 · 814 · 849 · 급행5 · 55 · 156 · 북구3 · 802번: 망우공원 하차
+      </dd></div>
+      <div><dt>주차</dt><dd>
+        호텔 이용객 3시간 무료 (등록 없이 출차), 연회행사는 행사 시간에 따라 달라집니다.<br>
+        주차 가능 대수 1,000대. 자세한 안내는 호텔 웨딩 문의 <a href="tel:0536027272">053-602-7272</a>로 확인해 주세요.
+      </dd></div>
+    </dl>
+  </section>
+
+  <!-- 7. 계좌 안내 -->
+  <section class="section section--a reveal" id="account">
+    <span class="num en">06</span>
+    <h2 class="title en">With Heart</h2>
+    <p class="subtitle">마음 전하실 곳</p>
+    <span class="rule"></span>
+    <p class="account__lead">
+      참석이 어려워 직접 축하해 주지 못하는<br>
+      분들을 위해 계좌번호를 안내드립니다.<br>
+      보내주시는 마음 감사히 간직하겠습니다.
+    </p>
+    <div class="accounts" id="accounts"></div>
+  </section>
+
+  <!-- 8. 공유 -->
+  <section class="section section--b share reveal" id="share">
+    <figure class="photo photo--rings">
+      <img src="image/web/07.jpg" alt="맞잡은 두 손과 결혼반지" loading="lazy">
+    </figure>
+    <span class="num en">07</span>
+    <h2 class="title en">Thank You</h2>
+    <p class="subtitle">감사합니다</p>
+    <span class="rule"></span>
+    <p class="share__text">소중한 걸음 해 주셔서 감사합니다.<br>청첩장을 지인에게도 전해 주세요.</p>
+    <div class="btn-row">
+      <button class="btn btn--fill" id="btnCopyLink" type="button">링크 복사</button>
+      <button class="btn" id="btnKakao" type="button" hidden>카카오톡 공유</button>
+    </div>
+    <p class="footer en">Minjun &amp; Seoyeon · 2027. 05. 15</p>
+  </section>
+</main>
+
+<!-- 갤러리 확대 창 -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="사진 크게 보기" hidden>
+  <button class="lightbox__close" id="lbClose" aria-label="닫기">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="이전 사진">&#8249;</button>
+  <img class="lightbox__img" id="lbImg" alt="">
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="다음 사진">&#8250;</button>
+  <p class="lightbox__count en" id="lbCount"></p>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
